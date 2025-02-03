@@ -1,0 +1,46 @@
+<script type="text/javascript" src="https://cp.mojocp.com/data/public/jwplayer_7.js"></script>
+<link rel="stylesheet" href="https://cp.mojocp.com/data/public/jw-skins.min.css">
+<div id="jw-player">Loading...</div>
+<script>
+	jwplayer.key = "B/yOGRlIMkFUoB0ucF8n4MOBh/SHV6t2TjRDU5TzVfI=";
+	jwplayer( "jw-player" ).setup({
+		"sources": [
+				{
+						"default": false,
+						"file": "rtmps://5a1178b42cc03.streamlock.net:443/dervis/dervis",
+						"label": "0",
+						"type": "rtmp",
+						"androidhls": true
+				},
+				{
+						"default": false,
+						"file": "https://5a1178b42cc03.streamlock.net:443/dervis/dervis/playlist.m3u8",
+						"label": "1",
+						"type": "hls",
+						"androidhls": true
+				}
+		],
+		"rtmp": {
+				"bufferlength": 3
+		},
+		"autostart": false,
+		"displaytitle": true,
+		"mute": false,
+		"title": "",
+		"image": "",
+		"volume": "75",
+		"width": "100%",
+		"aspectratio": "16:9",
+		"height": "360",
+		"fallback": false,
+		"androidhls": true,
+		"primary": "html5",
+		"skin": {
+				"name": "Default"
+		},
+		"logo": {
+				"file": "",
+				"position": "top-right"
+		}
+});
+</script>
